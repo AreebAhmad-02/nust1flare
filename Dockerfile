@@ -36,7 +36,7 @@ RUN pip install --no-cache-dir huggingface_hub
 RUN mkdir -p /workspace/outputs
 # Make predict.sh executable
 RUN chmod +x /workspace/predict.sh
-RUN bash /workspace/download_model.sh
 RUN chmod +x /workspace/download_model.sh
+RUN bash /workspace/download_model.sh
 # Set default command
 # CMD ["bash", "predict.sh"]
