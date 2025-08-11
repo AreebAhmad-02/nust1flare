@@ -1,0 +1,55 @@
+load("@io_bazel_rules_docker//container:container.bzl",
+     "container_pull",
+     "container_image",
+     "container_push")
+load("@io_bazel_rules_docker//docker/util:run.bzl", "container_run_and_commit")
+
+
+
+container_image(
+    name = "initial_image",
+    base = "@torch-basic//image",
+    files = glob(
+        ["**"],
+        exclude = [
+            "BUILD.bazel",
+            "WORKSPACE",
+            "bazel-*",            # exclude symlink dirs
+            "bazel-bin/**",
+            "bazel-out/**",
+            "bazel-testlogs/**",
+"**/*.pyc","**/__pycache__/**",
+        ],
+    ),
+    workdir = "/workspace",
+)
+
+
+
+# Stage 2 — run commands and commit to a new image
+container_run_and_commit(
+    name = "with_deps",
+    image = ":initial_image.tar",
+    commands = [
+        "pip install --no-cache-dir --upgrade pip",
+        "pip install -r requirements.txt",
+        "mkdir -p /workspace/outputs",
+        "chmod +x /workspace/predict.sh",
+    ],
+)
+
+# Define the final runnable image
+container_image(
+    name = "nust1flare",
+    base = ":with_deps",
+)
+container_push(
+    name = "nust1flare_push",
+    format = "Docker",  
+    image = ":nust1flare",  # This is the image you are pushing
+    registry = "docker.io",  # Docker registry (or another registry you use)
+    repository = "nust1flare",  # The image name you want in the registry
+    tag = "latest"  # Custom tag name
+)
+
+# Export the final image to a local Docker-compatible tarball

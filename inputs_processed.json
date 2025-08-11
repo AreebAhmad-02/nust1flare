@@ -1,0 +1,416 @@
+[
+  {
+    "case_id": "amos_0008.npy",
+    "findings": {
+      "liver": "The liver is normal in size and shape with homogeneous density. A patchy low-density lesion is seen around the liver fissure.",
+      "biliary system": "The intrahepatic duct system is not obviously dilated, and the course is normal. The gallbladder is not enlarged, with no obvious thickening of the wall, and no clearly abnormal density foci are seen inside.",
+      "spleen": "The spleen is normal in size and shape with homogeneous density, and some punctate low-density foci are seen inside.",
+      "pancreas": "The pancreas is normal in size and shape with homogeneous density, and no clearly abnormal density foci are seen inside. The main pancreatic duct is not obviously dilated, and the peripancreatic fat space is clear.",
+      "kidneys": "Both kidneys are normal in size and shape with homogeneous density. A round low-density lesion is seen in the right kidney with a diameter of about 16mm. The renal pelvis-calyx system is not obviously dilated. The perirenal fat space is clear, and no clearly abnormal density foci are seen.",
+      "endocrine system": "The left adrenal gland is thickened, and a punctate high-density lesion is seen in the right adrenal gland.",
+      "lymphatic system": "No enlarged lymph nodes are seen in the retroperitoneum."
+    },
+    "impression": [
+      "Low-density lesions around the liver fissure and spleen, caused by partial volume effect possible.",
+      "Cyst in the right kidney Suspected.",
+      "Left adrenal thickening, right adrenal calcification."
+    ],
+    "global_vqa": [
+      {
+        "question": "Which of the following conditions are present in this scan? (Select all that apply, leave empty if none)",
+        "answer": [
+          "splenic_cyst",
+          "adrenal_hyperplasia",
+          "adrenal_nodule",
+          "renal_cyst"
+        ],
+        "choices": [
+          "bile_duct_stone",
+          "cholecystitis",
+          "pancreatic_duct_dilatation",
+          "colon_gas",
+          "splenomegaly",
+          "gastric_cancer_(possible)",
+          "adrenal_mass",
+          "liver_cyst",
+          "pancreatic_cyst",
+          "renal_atrophy",
+          "colon_effusion",
+          "kidney_stone",
+          "fatty_liver",
+          "splenic_cyst",
+          "gallbladder_mass",
+          "intestinal_obstruction",
+          "varices",
+          "retroperitoneal_fibrosis",
+          "inflammatory_bowel_disease",
+          "pancreas_calcifications",
+          "absent_kidney",
+          "bladder_stones",
+          "atherosclerosis",
+          "appendicolith",
+          "splenic_calcification",
+          "adrenal_metastasis",
+          "hernia",
+          "intrahepatic_bile_duct_dilatation",
+          "adrenal_nodule",
+          "abdominal_abscess",
+          "pancreatitis",
+          "kidney_infarction",
+          "pneumoperitoneum",
+          "aortic_dissection",
+          "pancreatic_cancer",
+          "pancreas_atrophy",
+          "gastrointestinal_perforation",
+          "pancreatic_steatosis",
+          "peritonitis",
+          "renal_cyst",
+          "gallbladder_adenomyomatosis",
+          "colorectal_cancer_(possible)",
+          "ovarian_cyst",
+          "hydronephrosis",
+          "splenic_hemangioma",
+          "liver_lesion",
+          "abdominal_aortic_aneurysm",
+          "liver_calcifications",
+          "ovarian_mass",
+          "ascites",
+          "gastrointestinal_bleed",
+          "renal_mass",
+          "gallstone",
+          "appendicitis_(possible)",
+          "splenic_infarction",
+          "portal_hypertension",
+          "bile_duct_dilatation",
+          "colon_diverticulum",
+          "adrenal_hyperplasia",
+          "pancreatic_pseudocyst",
+          "liver_abscess",
+          "lymphadenopathy",
+          "bladder_diverticulum",
+          "diverticulitis",
+          "portal_vein_thrombosis",
+          "cirrhosis"
+        ]
+      }
+    ],
+    "local_vqa": [
+      {
+        "id": 1,
+        "follow_up": -1,
+        "question": "Is there a high-density focus at the distal end of the left ureter?",
+        "type": "finding_identification",
+        "answer": "No"
+      },
+      {
+        "id": 2,
+        "follow_up": 1,
+        "question": "What is the most likely clinical implication of the high-density focus in the left ureter?",
+        "type": "clinical_implication",
+        "answer": "Ureteral calculi",
+        "choices": [
+          "Ureteral calculi",
+          "Ureteral tumor",
+          "Blood clot"
+        ]
+      },
+      {
+        "id": 3,
+        "follow_up": -1,
+        "question": "Is there mild dilation of the left renal pelvis and calyces?",
+        "type": "finding_identification",
+        "answer": "Yes"
+      },
+      {
+        "id": 4,
+        "follow_up": -1,
+        "question": "Is there a round low-density lesion in the right kidney?",
+        "type": "finding_identification",
+        "answer": "Yes"
+      },
+      {
+        "id": 5,
+        "follow_up": 4,
+        "question": "What is the most likely nature of the right kidney lesion?",
+        "type": "clinical_implication",
+        "answer": "Cyst",
+        "choices": [
+          "Cyst",
+          "Solid tumor",
+          "Abscess"
+        ]
+      },
+      {
+        "id": 6,
+        "follow_up": -1,
+        "question": "Is there enlargement in the head of the pancreas with significant dilation of the biliary and pancreatic ducts?",
+        "type": "finding_identification",
+        "answer": "No"
+      },
+      {
+        "id": 7,
+        "follow_up": 6,
+        "question": "What is the most likely clinical implication of these pancreatic and ductal findings?",
+        "type": "clinical_implication",
+        "answer": "Pancreatic cancer with obstructive dilation",
+        "choices": [
+          "Chronic pancreatitis",
+          "Pancreatic cancer with obstructive dilation",
+          "Autoimmune pancreatitis"
+        ]
+      },
+      {
+        "id": 8,
+        "follow_up": -1,
+        "question": "Is there thickening of the left colon wall?",
+        "type": "finding_identification",
+        "answer": "No"
+      },
+      {
+        "id": 9,
+        "follow_up": 8,
+        "question": "Which segment of the colon shows wall thickening?",
+        "type": "localization",
+        "answer": "Left colon",
+        "choices": [
+          "Right colon",
+          "Transverse colon",
+          "Left colon"
+        ]
+      },
+      {
+        "id": 10,
+        "follow_up": 8,
+        "question": "What is a possible clinical implication of left colon wall thickening?",
+        "type": "clinical_implication",
+        "answer": "Colitis",
+        "choices": [
+          "Colitis",
+          "Diverticulosis",
+          "Normal variant"
+        ]
+      },
+      {
+        "id": 11,
+        "follow_up": -1,
+        "question": "Is there a non-enhancing circular low-density lesion in the right kidney protruding beyond the contour?",
+        "type": "finding_identification",
+        "answer": "Yes"
+      },
+      {
+        "id": 12,
+        "follow_up": 11,
+        "question": "How would you describe the margins of the right renal lesion?",
+        "type": "appearance_or_pattern",
+        "answer": "Smooth margins",
+        "choices": [
+          "Irregular margins",
+          "Smooth margins",
+          "Spiculated margins"
+        ]
+      },
+      {
+        "id": 13,
+        "follow_up": -1,
+        "question": "Is there a patchy low-density lesion around the liver fissure?",
+        "type": "finding_identification",
+        "answer": "Yes"
+      },
+      {
+        "id": 14,
+        "follow_up": 13,
+        "question": "What is the most likely cause of the low-density lesion around the liver fissure?",
+        "type": "clinical_implication",
+        "answer": "Partial volume effect",
+        "choices": [
+          "Metastasis",
+          "Partial volume effect",
+          "Abscess"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "amos_0013.npy",
+    "findings": {
+      "liver": "The liver is normal in position, size, and shape. A small nodular low-density lesion is seen at the anterior edge of the left lobe, with slight enhancement. The intrahepatic duct system is not obviously dilated.",
+      "biliary system": "The gallbladder is normal in size with homogeneous density.",
+      "spleen": "An irregular soft tissue density mass is seen in the splenic gastric space, about 39mm\u00d777mm in size, with indistinct boundary with the spleen. The mass shows moderate inhomogeneous enhancement on enhanced scanning.",
+      "pancreas": "The surface of the pancreas is rough with homogeneous density, and the adjacent fat space is clear.",
+      "kidneys": "Both kidneys are normal in shape and position with no significant abnormal density in the parenchyma, and the perirenal fat space is clear.",
+      "lymphatic system": "No obvious enlarged lymph nodes are seen in the abdominal cavity and retroperitoneum."
+    },
+    "impression": [
+      "Metastatic hepatic and splenic tumor possible Colorectal cancer possible.",
+      "Arteriosclerosis."
+    ],
+    "global_vqa": [
+      {
+        "question": "Which of the following conditions are present in this scan? (Select all that apply, leave empty if none)",
+        "answer": [
+          "liver_lesion",
+          "atherosclerosis",
+          "colorectal_cancer_(possible)"
+        ],
+        "choices": [
+          "bile_duct_stone",
+          "cholecystitis",
+          "pancreatic_duct_dilatation",
+          "colon_gas",
+          "splenomegaly",
+          "gastric_cancer_(possible)",
+          "adrenal_mass",
+          "liver_cyst",
+          "pancreatic_cyst",
+          "renal_atrophy",
+          "colon_effusion",
+          "kidney_stone",
+          "fatty_liver",
+          "splenic_cyst",
+          "gallbladder_mass",
+          "intestinal_obstruction",
+          "varices",
+          "retroperitoneal_fibrosis",
+          "inflammatory_bowel_disease",
+          "pancreas_calcifications",
+          "absent_kidney",
+          "bladder_stones",
+          "atherosclerosis",
+          "appendicolith",
+          "splenic_calcification",
+          "adrenal_metastasis",
+          "hernia",
+          "intrahepatic_bile_duct_dilatation",
+          "adrenal_nodule",
+          "abdominal_abscess",
+          "pancreatitis",
+          "kidney_infarction",
+          "pneumoperitoneum",
+          "aortic_dissection",
+          "pancreatic_cancer",
+          "pancreas_atrophy",
+          "gastrointestinal_perforation",
+          "pancreatic_steatosis",
+          "peritonitis",
+          "renal_cyst",
+          "gallbladder_adenomyomatosis",
+          "colorectal_cancer_(possible)",
+          "ovarian_cyst",
+          "hydronephrosis",
+          "splenic_hemangioma",
+          "liver_lesion",
+          "abdominal_aortic_aneurysm",
+          "liver_calcifications",
+          "ovarian_mass",
+          "ascites",
+          "gastrointestinal_bleed",
+          "renal_mass",
+          "gallstone",
+          "appendicitis_(possible)",
+          "splenic_infarction",
+          "portal_hypertension",
+          "bile_duct_dilatation",
+          "colon_diverticulum",
+          "adrenal_hyperplasia",
+          "pancreatic_pseudocyst",
+          "liver_abscess",
+          "lymphadenopathy",
+          "bladder_diverticulum",
+          "diverticulitis",
+          "portal_vein_thrombosis",
+          "cirrhosis"
+        ]
+      }
+    ],
+    "local_vqa": [
+      {
+        "id": 1,
+        "follow_up": -1,
+        "question": "Are there multiple lymph nodes in the mesenteric region?",
+        "type": "finding_identification",
+        "answer": "Yes"
+      },
+      {
+        "id": 2,
+        "follow_up": -1,
+        "question": "Is there an irregular soft tissue density mass in the splenic gastric space with indistinct boundary with the spleen?",
+        "type": "finding_identification",
+        "answer": "Yes"
+      },
+      {
+        "id": 3,
+        "follow_up": 2,
+        "question": "How would you describe the enhancement pattern of the splenic gastric mass?",
+        "type": "appearance_or_pattern",
+        "answer": "Moderate inhomogeneous enhancement",
+        "choices": [
+          "No enhancement",
+          "Homogeneous enhancement",
+          "Moderate inhomogeneous enhancement"
+        ]
+      },
+      {
+        "id": 4,
+        "follow_up": 2,
+        "question": "What is the most likely clinical implication of the splenic gastric mass?",
+        "type": "clinical_implication",
+        "answer": "Metastatic tumor",
+        "choices": [
+          "Splenic abscess",
+          "Metastatic tumor",
+          "Lymphoma"
+        ]
+      },
+      {
+        "id": 5,
+        "follow_up": -1,
+        "question": "Is there dilatation of the local intestine?",
+        "type": "finding_identification",
+        "answer": "No"
+      },
+      {
+        "id": 6,
+        "follow_up": 5,
+        "question": "Which region shows intestinal dilatation?",
+        "type": "localization",
+        "answer": "Localized segment",
+        "choices": [
+          "Diffuse throughout the abdomen",
+          "Localized segment",
+          "Entire colon"
+        ]
+      },
+      {
+        "id": 7,
+        "follow_up": -1,
+        "question": "Is there a small nodular low-density lesion in the left lobe of the liver?",
+        "type": "finding_identification",
+        "answer": "Yes"
+      },
+      {
+        "id": 8,
+        "follow_up": 7,
+        "question": "Where is the liver lesion located?",
+        "type": "localization",
+        "answer": "Anterior edge of the left lobe",
+        "choices": [
+          "Right lobe",
+          "Left lobe",
+          "Anterior edge of the left lobe"
+        ]
+      },
+      {
+        "id": 9,
+        "follow_up": 7,
+        "question": "What is the most likely clinical implication of this liver lesion?",
+        "type": "clinical_implication",
+        "answer": "Metastatic tumor",
+        "choices": [
+          "Hepatic cyst",
+          "Hemangioma",
+          "Metastatic tumor"
+        ]
+      }
+    ]
+  }
+]
