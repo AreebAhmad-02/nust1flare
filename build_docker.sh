@@ -48,7 +48,6 @@ if [ $? -eq 0 ]; then
     echo ""
     echo "🎉 Docker container is ready for submission!"
     echo "📁 File: $TAR_NAME"
-    echo ""
 # #pushing image
 # docker tag nust1flare:latest areeb21/nust1flare:latest
 # docker login
