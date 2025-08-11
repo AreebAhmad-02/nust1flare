@@ -10,14 +10,14 @@ echo "Output directory: /workspace/outputs/"
 mkdir -p /workspace/outputs/
 
 # Step 1 — Download model if not already present
-echo "calling download_model.sh file "
+# echo "calling download_model.sh file "
 
-if [ ! -f "/workspace/results/baseline/model-00004-of-00004.safetensors" ]; then
-    echo "[INFO] Model not found. Downloading from Hugging Face..."
-    bash /workspace/download_model.sh
-else
-    echo "[INFO] Model already present, skipping download."
-fi
+# if [ ! -f "/workspace/results/baseline/model-00004-of-00004.safetensors" ]; then
+#     echo "[INFO] Model not found. Downloading from Hugging Face..."
+#     bash /workspace/download_model.sh
+# else
+#     echo "[INFO] Model already present, skipping download."
+# fi
 
 # Run inference
 echo "Running preprocessing on images..."
